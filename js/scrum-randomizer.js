@@ -5,8 +5,6 @@ var teams = {
       'Chuck',
       'Hillary',
       'Jessica',
-      'Jimmy',
-      'Kim',
       'Kurt',
       'Natalia',
       'Christie',
