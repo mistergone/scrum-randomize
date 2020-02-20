@@ -1,7 +1,10 @@
 var teams = {
     'CFRPI': [
+      'Amy',
+      'Brenda',
       'Carol',
       'Chuck',
+      'Darius',
       'Julie',
       'Marteki',
       'Tommi'
