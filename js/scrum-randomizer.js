@@ -2,7 +2,7 @@ const teams = {
     'External Products': [
       'A.J.',
       'Brandon',
-      'Chuck'
+      'Chuck',
       'David',
       'Lily',
       'Tommi',
