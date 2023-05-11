@@ -13,11 +13,11 @@ const teams = {
     today = new Date();
 
 const agendas = {
-  'Monday': 'Today we should go over the task board!',
-  'Tuesday': 'Today we should do individual updates!',
-  'Wednesday': 'Today we should go over the task board!',
-  'Thursday': 'Today we should do individual updates!',
-  'Friday': 'Today we have virtual scrum!',
+  'Monday': 'We should go over the task board!',
+  'Tuesday': 'We should do individual updates!',
+  'Wednesday': 'We should go over the task board!',
+  'Thursday': 'We should do individual updates!',
+  'Friday': 'We have virtual scrum!',
   'none': 'Uhm... it\'s the weekend...?'
 }
 
@@ -44,8 +44,7 @@ function orderTeam( team ) {
   return content;
 }
 
-function todaysAgenda( ) {
-  const day = new Date().toLocaleDateString('en', {weekday:'long'});
+function todaysAgenda( day ) {
   if ( !agendas.hasOwnProperty( day ) ) {
     return agendas.none;
   } else {
@@ -57,6 +56,7 @@ function todaysAgenda( ) {
 $( document ).ready( function() {
   var dateText = ( today.getMonth() + 1 ) + '/' + today.getDate() + '/' + today.getFullYear();
   $( '#date-today').text( dateText );
+  const day = new Date().toLocaleDateString('en', {weekday:'long'});
 
   for ( var key in teams ) {
     var name = key,
@@ -64,8 +64,8 @@ $( document ).ready( function() {
         content = orderTeam( team );
     $( 'body' ).append( '<h2>' + name + '</h2>');
     $( 'body' ).append( '<ol>' + content + '</ol>');
-    $( 'body' ).append( '<h3>Today\'s agenda:</h3>' );
-    $( 'body' ).append( '<p><strong>' + todaysAgenda + '</strong></p>' );
+    $( 'body' ).append( '<h3>Today\'s agenda (' + day + '):</h3>'  );
+    $( 'body' ).append( '<ul class="agenda"><li>' + todaysAgenda(day) + '</li></ul>' );
   }
 
 });
