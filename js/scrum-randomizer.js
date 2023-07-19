@@ -5,6 +5,7 @@ const teams = {
       'Chuck',
       'David',
       'Lily',
+      'Ruth',
       'Tommi',
       'Tim',
       'Wyatt'
