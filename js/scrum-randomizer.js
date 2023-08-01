@@ -4,11 +4,9 @@ const teams = {
       'Brandon',
       'Chuck',
       'David',
-      'Lily',
       'Ruth',
       'Tommi',
-      'Tim',
-      'Wyatt'
+      'Tim'
     ]
 }
     today = new Date();
