@@ -3,10 +3,8 @@ const teams = {
       'A.J.',
       'Brandon',
       'Chuck',
-      'David',
       'Ruth',
-      'Tommi',
-      'Tim'
+      'Tommi'
     ]
 }
     today = new Date();
