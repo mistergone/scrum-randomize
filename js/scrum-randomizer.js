@@ -3,6 +3,7 @@ const teams = {
       'A.J.',
       'Brandon',
       'Chuck',
+      'Heather',
       'Ruth',
       'Tommi'
     ]
