@@ -1,11 +1,11 @@
 const teams = {
     'External Products': [
       'A.J.',
-      'Brandon',
       'Chuck',
-      'Heather',
+      'Maria',
       'Ruth',
-      'Tommi'
+      'Tommi',
+      'Wyatt'
     ]
 }
     today = new Date();
